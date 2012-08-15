@@ -1,0 +1,40 @@
+body {
+	width: 8.5in;
+	font-family: "Helvetica", "Bitstream Charter", "Times New Roman";
+}
+h1 {
+	font-size:medium;
+	font-weight:bold;
+	margin-bottom:0px;
+}
+header,
+.header {
+	text-align:center;
+	margin-bottom:2em;
+}
+.split {
+	width:100%;
+}
+.split > div {
+	display: inline-block;
+	width:50%;
+}
+.split > div:first-child {
+	text-align:left;
+}
+.split > div:last-child {
+	text-align:right;
+}
+ul {
+	margin-top:0px;
+}
+.technical td:first-child {
+	padding-left:0px;
+}
+section {
+	margin-bottom:2em;
+}
+.email {
+	unicode-bidi:bidi-override;
+	direction:rtl;
+}
