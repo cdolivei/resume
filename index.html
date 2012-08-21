@@ -1,6 +1,7 @@
 ---
 ---
 <!DOCTYPE html>
+<head>
 <title>Cesar's Resume</title>
 <link rel="stylesheet" href="default.css" media="screen"/>
 <link rel="stylesheet" href="web.css" media="screen"/>
@@ -33,9 +34,11 @@ function buildmailto()
 	var email = from_octal("141 56 163 141 143 162 145 144 56 154 151 156 145 100 147 155 141 151 154 56 143 157 155");
 	return "<a href='mailto:" + email + "'>" + email +"</a>";
 }
+document.createElement("header"); // fix for IE 8 and below
 </script>
-
-<header class="header">
+</head>
+<body>
+<header>
 	<h1>Cesar Oliveira</h1>
 	<div>{% include contact.html %}</div>
 	<div><a href="https://github.com/cdolivei">github.com/cdolivei</a> &#x2022; <a href="https://bitbucket.org/cdolivei">bitbucket.org/cdolivei</a></div>
@@ -123,3 +126,4 @@ function buildmailto()
 		<div>Bachelor of Software Development</div><div>2004-2008</div>
 	</div>
 </section>
+</body>

@@ -7,8 +7,7 @@ h1 {
 	font-weight:bold;
 	margin-bottom:0px;
 }
-header,
-.header {
+header {
 	text-align:center;
 	margin-bottom:2em;
 }
@@ -18,12 +17,10 @@ header,
 .split > div {
 	display: inline-block;
 	width:50%;
+	text-align:right;
 }
 .split > div:first-child {
 	text-align:left;
-}
-.split > div:last-child {
-	text-align:right;
 }
 ul {
 	margin-top:0px;
