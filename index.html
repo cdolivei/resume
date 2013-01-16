@@ -8,39 +8,14 @@
 <link rel="stylesheet" href="print.css" media="print"/>
 
 <script type="text/javascript">
-function to_octal(str)
-{
-	var octalized = new Array();
-	for (var i = 0; i < str.length; ++i)
-	{
-		octalized.push(str.charCodeAt(i).toString(8));
-	}
-	return octalized.join(" ");
-}
-function from_octal(octs)
-{
-	var str = "";
-	var octals = octs.split(" ")
-	// forEach does not work in IE 7 + 8, &*$#^
-	for (var i = 0; i < octals.length; ++i)
-	{
-		str += String.fromCharCode(parseInt(octals[i], 8));
-	}
-	return str;
-}
-
-function buildmailto()
-{
-	var email = from_octal("141 56 163 141 143 162 145 144 56 154 151 156 145 100 147 155 141 151 154 56 143 157 155");
-	return "<a href='mailto:" + email + "'>" + email +"</a>";
-}
-// fix for IE 8 and below. This helps create the DOM properly. See:
-// http://blog.whatwg.org/supporting-new-elements-in-ie#comment-40743
-document.createElement("header");
-document.createElement("section"); 
+	// fix for IE 8 and below. This helps create the DOM properly. See:
+	// http://blog.whatwg.org/supporting-new-elements-in-ie#comment-40743
+	document.createElement("header");
+	document.createElement("section");
 </script>
 </head>
 <body>
+
 <header>
 	<h1>Cesar Oliveira</h1>
 	<div>{% include contact.html %}</div>
