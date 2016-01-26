@@ -28,6 +28,11 @@ ul {
 .technical td:first-child {
 	padding-left:0px;
 }
+.technical th {
+	font-weight: normal;
+	text-align: left;
+	width:200px;
+}
 section {
 	margin-bottom:2em;
 }
